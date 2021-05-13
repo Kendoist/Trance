@@ -1,3 +1,5 @@
-language:java
+language: java
 jdk:
- - oraclejdk8
+ - openjdk8
+install: cd trance2.0 && mvn install -DskipTests=true -Dmaven.javadoc.skip=true
+script: mvn test
